@@ -14,7 +14,7 @@ describe('car tests', () => {
     expect(car.miles).toEqual(0);
 
   });
-  
+
   test('drivenmiles', () => {
     expect(car.drive(15)).toEqual(15);
   });
@@ -22,5 +22,10 @@ describe('car tests', () => {
   test('can be driven', () => {
     expect(car.drive(2)).toEqual(2);
   });
+
+  test('static makes friendly', () => {
+    expect(Car.makes()).toEqual('turtle');
+  });
+
 });
 
